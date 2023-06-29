@@ -1,0 +1,80 @@
+
+-----
+Test: test/test_user_auth.py::TestUserAuth::test_auth_user (setup)
+Time: 2023-06-29 11:13:56.418206
+Request method: POST
+Request URL: https://playground.learnqa.ru/api/user/login
+Request URL: {'email': 'vinkotov@example.com', 'password': '1234'}
+Request URL: {}
+Request URL: {}
+
+
+-----
+Test: test/test_user_auth.py::TestUserAuth::test_negative_auth_check[no_cookie] (setup)
+Time: 2023-06-29 11:13:56.812607
+Request method: POST
+Request URL: https://playground.learnqa.ru/api/user/login
+Request URL: {'email': 'vinkotov@example.com', 'password': '1234'}
+Request URL: {}
+Request URL: {}
+
+
+-----
+Test: test/test_user_auth.py::TestUserAuth::test_negative_auth_check[no_token] (setup)
+Time: 2023-06-29 11:13:56.955664
+Request method: POST
+Request URL: https://playground.learnqa.ru/api/user/login
+Request URL: {'email': 'vinkotov@example.com', 'password': '1234'}
+Request URL: {}
+Request URL: {}
+
+
+-----
+Test: test/test_user_edit.py::TestUserEdit::test_edit_just_created_user (call)
+Time: 2023-06-29 11:13:57.099190
+Request method: POST
+Request URL: https://playground.learnqa.ru/api/user
+Request URL: {'password': '123', 'username': 'learnqa', 'firstName': 'learnqa', 'lastName': 'learnqa', 'email': 'learnqa06292023111357@example.com'}
+Request URL: {}
+Request URL: {}
+
+
+-----
+Test: test/test_user_get.py::TestUserGet::test_get_user_details_not_auth (call)
+Time: 2023-06-29 11:13:57.753260
+Request method: GET
+Request URL: https://playground.learnqa.ru/api/user/2
+Request URL: None
+Request URL: {}
+Request URL: {}
+
+
+-----
+Test: test/test_user_get.py::TestUserGet::test_get_user_details_auth_as_same_user (call)
+Time: 2023-06-29 11:13:58.470339
+Request method: POST
+Request URL: https://playground.learnqa.ru/api/user/login
+Request URL: {'email': 'vinkotov@example.com', 'password': '1234'}
+Request URL: {}
+Request URL: {}
+
+
+-----
+Test: test/test_user_register.py::TestUserReqister::test_create_user_successfully (call)
+Time: 2023-06-29 11:13:58.631917
+Request method: POST
+Request URL: https://playground.learnqa.ru/api/user/
+Request URL: {'password': '123', 'username': 'learnqa', 'firstName': 'learnqa', 'lastName': 'learnqa', 'email': 'learnqa06292023111358@example.com'}
+Request URL: {}
+Request URL: {}
+
+
+-----
+Test: test/test_user_register.py::TestUserReqister::test_create_user_with_existing_email (call)
+Time: 2023-06-29 11:13:59.309867
+Request method: POST
+Request URL: https://playground.learnqa.ru/api/user/
+Request URL: {'password': '123', 'username': 'learnqa', 'firstName': 'learnqa', 'lastName': 'learnqa', 'email': 'vinkotov@example.com'}
+Request URL: {}
+Request URL: {}
+
